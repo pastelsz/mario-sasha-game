@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid rgb(130, 228, 130);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgb(76, 201, 250), white)
+}
+
+.sasha {
+    position:absolute;
+    width: 300px;
+    bottom: -17px;
+}
+
+.jump {
+    animation: jump 500ms ease-out;
+}
+
+.fundo {
+    position: absolute;
+    width: 450px;
+    animation: fundo-animation 10s infinite linear;
+    
+}
+
+.sprig {
+    position: absolute;
+    bottom: 0;
+    width: 150px;
+    animation: sprig-animation 1.2s infinite linear;
+}
+
+@keyframes sprig-animation {
+    from {
+        right: -150px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: -17px;
+    }
+
+    40% {
+        bottom: 220px;
+    }
+
+    50% {
+        bottom: 220px;
+    }
+
+    60% {
+        bottom: 220px;
+    }
+
+    100% {
+        bottom: -17px;
+    }
+}
+
+@keyframes fundo-animation {
+    from {
+        right: -450px;
+    }
+
+    to{
+        right: 100%;
+    }
+
+}
+
+.tome {
+    animation-play-state: initial;
+}
